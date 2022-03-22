@@ -1,0 +1,10 @@
+// BEGIN_INTERNALS
+/*
+MAP_ZOOM: 1.000
+DIR: _code 
+AUTO_FILE_DIR: ON
+MAP_ICON_TYPE: 0
+WINDOW: _includes.dm;_code\client.dm
+FILE: _includes.dm
+*/
+// END_INTERNALS
