@@ -1,5 +1,5 @@
-# zone3
-zone6/zone7 engine
+# zone3 - ALPHA 0.0.1
+official repo for the zone6/zone7 engine
 
 
 ## todos
@@ -9,6 +9,8 @@ zone6/zone7 engine
 4. create onenote todos
 5. create zone3 roadmap
 6. create new readme on hackmd
+7. create todolist on trello
+8. create website
 
 ## information
 website: https://zone3.playsls.com <br/>
