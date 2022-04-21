@@ -2,7 +2,7 @@ mob/var/TxtSpd = 0.1
 client/var/TxtSpd = 0.3
 
 
-var/list/font_resources = list('pkmnrs.ttf') // To use A font you first need to specify the file somewhere. Let's do it now! :)
+var/list/font_resources = list('blackjack.ttf') // To use A font you first need to specify the file somewhere. Let's do it now! :)
 /HUD/Text
 	parent_type = /obj
 	screen_loc = "8,7"

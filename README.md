@@ -11,10 +11,11 @@ zone6/zone7 engine
 6. create new readme on hackmd
 
 ## information
-website: https://zone3.playsls.com
-discord: https://zone3.playsls.com/discord
+website: https://zone3.playsls.com <br/>
+discord: https://zone3.playsls.com/discord <br/>
 
 ## tools
 hackMD: https://hackmd.io <br/>
 portchecker: https://portchecker.co/ <br/>
-DM Reference: https://www.byond.com/docs/ref/index.html
+DM Reference: https://www.byond.com/docs/ref/index.html <br/>
+BYOND Skin Reference: https://www.byond.com/docs/ref/skinparams.html <br/>
