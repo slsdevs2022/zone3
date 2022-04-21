@@ -13,7 +13,6 @@
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
-#define DEBUG
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
@@ -24,9 +23,8 @@
 #include "_code\_client_verbs.dm"
 #include "_code\_world.dm"
 #include "_code\_client\_adminedit.dm"
-#include "_code\_client\interface\__fullscreen.dm"
 #include "_code\_client\interface\_interface.dm"
-#include "_code\_client\interface\map text.dm"
-#include "_code\_client\interface\fullscreen_interface.dmf"
+#include "_code\_client\interface\_maptext.dm"
+#include "_code\_client\interface\DEFAULT.dmf"
 // END_INCLUDE
 

@@ -1,12 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1650533500
+LAST_COMPILE_TIME: 1650537710
 DIR: _code _code\_client _code\_client\interface 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 514.1583
-WINDOW: _includes.dm;_code\_client.dm;_code\_world.dm;_code\_client\_admin.dm;_code\_client\_adminv2.dm;_directories.dm;__precompiler.dm;_code\_client\interface\__fullscreen.dm;_code\_client\interface\_interface.dm;_code\_client\interface\map text.dm
-FILE: _code\_client\interface\map text.dm
+WINDOW: _includes.dm;_code\_client.dm;_code\_world.dm;_code\_client\_admin.dm;_code\_client\_adminv2.dm;_directories.dm;__precompiler.dm;_code\_client\interface\_interface.dm;_code\_client\interface\_maptext.dm;_code\_client\interface\interface.dmf;_code\_client\interface\DEFAULT.dmf;_code\_client\_adminedit.dm
+FILE: _code\_world.dm
 */
 // END_INTERNALS

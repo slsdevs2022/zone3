@@ -13,11 +13,11 @@ ONLY TURN OFF IF YOU KNOW WHAT YOU'RE DOING
 
 
 #if DM_VERSION < 5.12 //This is so if DM is kind of out of date it'll warn but compile
-#warn WARNING: This version of DreamMaker has not been tested with this branch, errors may occur
+#warn WARNING: This version of DreamMaker is outdated... Errors may occur
 #endif
 
 
-#if DM_VERSION > 513.1425 //This is so if DM hasn't been tested it'll warn them
+#if DM_VERSION > 514.1500 //This is so if DM hasn't been tested it'll warn them
 #warn WARNING: This version of DreamMaker has not been tested with this branch, errors may occur
 #endif
 

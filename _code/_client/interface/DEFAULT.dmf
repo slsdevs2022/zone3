@@ -40,7 +40,7 @@ macro "macro"
 		command = "Who"
 	elem 
 		name = "T"
-		command = "Say"
+		command = "ooc"
 	elem 
 		name = "Z"
 		command = "CheckFullscreen"
@@ -65,15 +65,12 @@ window "default"
 		size = 1184x672
 		anchor1 = -1,-1
 		anchor2 = -1,-1
-		background-color = none
 		is-default = true
 		drop-zone = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
 		macro = "macro"
 		menu = "menu"
-		outer-size = 1202x744
-		inner-size = 1184x672
 	elem "map1"
 		type = MAP
 		pos = 0,0
@@ -99,8 +96,6 @@ window "chat"
 		can-resize = false
 		transparent-color = #ff0080
 		macro = "macro"
-		outer-size = 494x161
-		inner-size = 478x145
 	elem "output1"
 		type = OUTPUT
 		pos = 0,0
@@ -140,8 +135,6 @@ window "EditPage"
 		can-resize = false
 		macro = "macro"
 		on-close = "CloseEdit"
-		outer-size = 379x443
-		inner-size = 361x396
 	elem "Search"
 		type = INPUT
 		pos = 96,36

@@ -4,6 +4,7 @@
 //DIRECTORIES
 #define FILE_DIR "_code"
 #define FILE_DIR "_code/_client"
+#define FILE_DIR "fonts"
 //#define FILE_DIR "_code/client/HUD"
 #define FILE_DIR "_code/systems"
 //#define FILE_DIR "_code/systems/sounds"
