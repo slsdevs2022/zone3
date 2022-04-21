@@ -7,6 +7,9 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
+#define FILE_DIR "_code"
+#define FILE_DIR "_code/_client"
+#define FILE_DIR "_code/_client/interface"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
@@ -18,7 +21,12 @@
 #include "_directories.dm"
 #include "_includes.dm"
 #include "_code\_client.dm"
+#include "_code\_client_verbs.dm"
 #include "_code\_world.dm"
-#include "_code\_client\_admin.dm"
+#include "_code\_client\_adminedit.dm"
+#include "_code\_client\interface\__fullscreen.dm"
+#include "_code\_client\interface\_interface.dm"
+#include "_code\_client\interface\map text.dm"
+#include "_code\_client\interface\fullscreen_interface.dmf"
 // END_INCLUDE
 

@@ -1,0 +1,337 @@
+macro "macro"
+	elem 
+		name = "Center+REP"
+		command = ".center"
+	elem 
+		name = "Escape"
+		command = "ToggleFullscreen"
+	elem 
+		name = "Northeast+REP"
+		command = ".northeast"
+	elem 
+		name = "Southeast+REP"
+		command = ".southeast"
+	elem 
+		name = "Southwest+REP"
+		command = ".southwest"
+	elem 
+		name = "Northwest+REP"
+		command = ".northwest"
+	elem 
+		name = "West+REP"
+		command = ".west"
+	elem 
+		name = "North+REP"
+		command = ".north"
+	elem 
+		name = "East+REP"
+		command = ".east"
+	elem 
+		name = "South+REP"
+		command = ".south"
+	elem 
+		name = "I"
+		command = "ServerInfo"
+	elem 
+		name = "O"
+		command = "Who2"
+	elem 
+		name = "P"
+		command = "Who"
+	elem 
+		name = "T"
+		command = "Say"
+	elem 
+		name = "Z"
+		command = "CheckFullscreen"
+
+
+menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 372,0
+		size = 1184x672
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		is-default = true
+		drop-zone = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		macro = "macro"
+		menu = "menu"
+		outer-size = 1202x744
+		inner-size = 1184x672
+	elem "map1"
+		type = MAP
+		pos = 0,0
+		size = 1184x672
+		anchor1 = 0,0
+		anchor2 = 100,100
+		is-default = true
+		saved-params = "zoom;letterbox;zoom-mode"
+
+window "chat"
+	elem "chat"
+		type = MAIN
+		pos = 372,0
+		size = 478x145
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #ff0080
+		saved-params = "pos;size;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		transparent-color = #ff0080
+		macro = "macro"
+		outer-size = 494x161
+		inner-size = 478x145
+	elem "output1"
+		type = OUTPUT
+		pos = 0,0
+		size = 478x125
+		anchor1 = 0,0
+		anchor2 = 100,100
+		font-size = 10
+		text-color = #ffffff
+		background-color = #ff0080
+		is-default = true
+		saved-params = "max-lines"
+		max-lines = 7
+	elem "input1"
+		type = INPUT
+		pos = 0,125
+		size = 478x20
+		anchor1 = 0,100
+		anchor2 = 100,100
+		font-size = 10
+		text-color = #ffffff
+		background-color = #ff0080
+		saved-params = ""
+		command = "say"
+
+window "EditPage"
+	elem "EditPage"
+		type = MAIN
+		pos = 372,0
+		size = 361x396
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #646464
+		is-visible = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "Edit"
+		statusbar = false
+		can-resize = false
+		macro = "macro"
+		on-close = "CloseEdit"
+		outer-size = 379x443
+		inner-size = 361x396
+	elem "Search"
+		type = INPUT
+		pos = 96,36
+		size = 256x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		border = sunken
+		saved-params = ""
+		command = "EditSearch"
+	elem "label41"
+		type = LABEL
+		pos = 8,36
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = ""
+		text = "Search"
+	elem "SelectedOut"
+		type = OUTPUT
+		pos = 96,8
+		size = 256x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		border = sunken
+		saved-params = "max-lines"
+		max-lines = 1
+	elem "NullBut"
+		type = BUTTON
+		pos = 272,368
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Null"
+		command = "ChangeValue \"Null\""
+	elem "LocBut"
+		type = BUTTON
+		pos = 272,340
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Reference"
+		command = "ChangeValue \"Loc\""
+	elem "DefBut"
+		type = BUTTON
+		pos = 184,368
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Default"
+		command = "ChangeValue \"Default\""
+	elem "TypBut"
+		type = BUTTON
+		pos = 184,340
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Type"
+		command = "ChangeValue \"Type\""
+	elem "FilBut"
+		type = BUTTON
+		pos = 96,368
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "File"
+		command = "ChangeValue \"File\""
+	elem "NumBut"
+		type = BUTTON
+		pos = 96,340
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Number"
+		command = "ChangeValue \"Num\""
+	elem "IcoBut"
+		type = BUTTON
+		pos = 8,368
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Icon"
+		command = "ChangeValue \"Icon\""
+	elem "TexBut"
+		type = BUTTON
+		pos = 8,340
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = "is-checked"
+		text = "Text"
+		command = "ChangeValue \"Text\""
+	elem "VarValue"
+		type = OUTPUT
+		pos = 96,312
+		size = 256x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		border = sunken
+		saved-params = "max-lines"
+		max-lines = 1
+	elem "VarName"
+		type = OUTPUT
+		pos = 96,284
+		size = 256x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		border = sunken
+		saved-params = "max-lines"
+		max-lines = 1
+	elem "label72"
+		type = LABEL
+		pos = 0,271
+		size = 361x6
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #000000
+		saved-params = ""
+		text = ""
+	elem "label46"
+		type = LABEL
+		pos = 8,312
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = ""
+		text = "Current Value"
+	elem "label42"
+		type = LABEL
+		pos = 8,284
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = ""
+		text = "Selected Var"
+	elem "label36"
+		type = LABEL
+		pos = 8,8
+		size = 80x20
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = #b4b4b4
+		saved-params = ""
+		text = "Selected"
+	elem "VarGrid"
+		type = GRID
+		pos = 8,64
+		size = 345x200
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		text-color = #c9c9c9
+		background-color = #1e1e1e
+		saved-params = ""
+		cells = 1x1
+		current-cell = 1,1
+		link-color = #c9c9c9
+		visited-color = #c9c9c9
+		line-color = #5badff
+		highlight-color = #c9c9c9
+	elem "BackBut"
+		type = BUTTON
+		pos = 8,252
+		size = 8x12
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		text-color = #d7d7d7
+		background-color = #1e1e1e
+		is-visible = false
+		saved-params = "is-checked"
+		text = "<"
+		command = "EditBack"
+

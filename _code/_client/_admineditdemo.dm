@@ -1,0 +1,30 @@
+
+mob
+	icon_state="MOBS"
+	Login()
+		..()
+		Index["Player"]=src
+obj
+	icon_state="OBJS"
+	ADatum/ADatum=new/ADatum
+	var
+		ADatum/ADatum=new/ADatum
+		list/AList=list("Hello"="Hi","I","am","a","list")
+turf
+	icon_state="TURFS"
+ADatum
+	var
+		BDatum/BDatum=new/BDatum
+BDatum
+	var
+		obj/Aobj=new/obj
+		CDatum/CDatum=new/CDatum
+		list/AList=list("Hello"="Hi","I","am","a","list")
+	New()
+		var/R=new/CDatum
+		AList+=R
+CDatum
+
+var/list/ListOne=list("Hello","I","Am","List","One")
+var/list/ListTwo=list("Hello","I","Am","List","Two","ListThree"=ListThree)
+var/list/ListThree=list("I'm","Hiding","In","List","Two")
