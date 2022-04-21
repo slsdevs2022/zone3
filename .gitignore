@@ -1,0 +1,11 @@
+
+#server data files
+data/
+SQL/
+
+# DM build/intermediate files
+*.dmb
+*.rsc
+*.int
+*.lk
+*.mdme
