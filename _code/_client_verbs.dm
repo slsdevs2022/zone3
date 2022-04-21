@@ -3,14 +3,19 @@ client/verb
 		set hidden = 1
 		var/calcLag = abs(world.cpu - 100)
 		var/server
+		server+= {"<center>"}
 		server+= {"<b>\[SERVER INFO]</b><br>"}
-		server+= {"<small>Server Hosted On: [world.system_type]<br>"}
-		server+= {"<small>Server Efficiency: [calcLag]%<br>"}
-		server+= {"<small>Server Address: byond://[world.address]:[world.port]<br>"}
-		server+= {"<small>Time Hosted: [world.time/100](Seconds)<br>"}
-		src<<server
-		align_text()
-		winset(src,"default","focus=true")
+		server+= {"<small>Server Name: [world.name]</small><br/>"}
+		server+= {"<small>Version: [world.version]</small><br/>"}
+		server+= {"<small>Server Hosted On: [world.system_type]<br/>"}
+		server+= {"<small>Server Efficiency: [calcLag]%<br/>"}
+		server+= {"<small>Server Address: byond://[world.address]:[world.port]<br/>"}
+		server+= {"<small>Time Hosted: [world.time/100](Seconds)<br/>"}
+		server+= {"</center>"}
+		screentext2(src,server)
+		//src<<server
+		//align_text()
+		//winset(src,"default","focus=true")
 
 	Who()
 		set hidden = 1

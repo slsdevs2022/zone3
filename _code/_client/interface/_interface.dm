@@ -3,7 +3,7 @@ mob
 	Login()
 		..()
 		//screentext2(src.client,"[src.key] has logged in...")
-		screentext2(src.client,MOTD)
+		screentext2(src.client,MOTD) //default motd is in ../_code/_world.dm
 	Logout()
 		..()
 		//world<<"<i><b>[src.key] has logged out!</b></i>"
