@@ -1,10 +1,12 @@
+
 mob
 	Login()
 		..()
-		screentext2(src.client,"[src.key] has logged in...")
+		//screentext2(src.client,"[src.key] has logged in...")
+		screentext2(src.client,MOTD)
 	Logout()
 		..()
-		world<<"<i><b>[src.key] has logged out!</b></i>"
+		//world<<"<i><b>[src.key] has logged out!</b></i>"
 
 
 
@@ -20,7 +22,7 @@ client
 		..()
 
 	Del()
-		//world<<"<i><b>[src] has logged out!</b></i>"
+		world<<"<b>[src] has logged out!</b>"
 		..()
 	verb
 		ToggleFullscreen()
