@@ -1,0 +1,1 @@
+world/name = "zone3"

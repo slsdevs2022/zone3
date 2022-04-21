@@ -14,7 +14,11 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "__precompiler.dm"
+#include "_directories.dm"
 #include "_includes.dm"
-#include "_code\client.dm"
+#include "_code\_client.dm"
+#include "_code\_world.dm"
+#include "_code\_client\_admin.dm"
 // END_INCLUDE
 
